@@ -1,0 +1,35 @@
+<!--
+  Generated template for the AddEventPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar  color="dark">
+    <ion-title >AddEvent</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <ion-list >
+    <ion-item  >
+  <ion-label color="primary">Agender:</ion-label>
+  <ion-input placeholder="enter agender" [(ngModel)] = "agender" ></ion-input>
+</ion-item>
+<ion-item >
+    <ion-label color="primary">Date:</ion-label>
+    <ion-input placeholder="Event date" [(ngModel)] = "date"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label color="primary">Place:</ion-label>
+      <ion-input placeholder="enter place" [(ngModel)] = "place" ></ion-input>
+    </ion-item>
+</ion-list>
+
+<button ion-button block (click)= "onAdd()">Add</button>
+
+</ion-content>
